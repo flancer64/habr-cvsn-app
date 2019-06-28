@@ -1,0 +1,33 @@
+{
+  "name": "flancer64/habr-cvsn-app",
+  "version": "0.1.0",
+  "description": "Demo for Habr: Application module.",
+  "license": "GPL-3.0-only",
+  "authors": [
+    {
+      "name": "Alex Gusev",
+      "email": "alex@flancer64.com"
+    }
+  ],
+  "type": "project",
+  "minimum-stability": "stable",
+  "require": {
+    "flancer64/habr-cvsn-mod-base": "dev-master as 0.1.0",
+    "flancer64/habr-cvsn-mod-func": "dev-master as 0.1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Flancer64\\HabrCvN\\App\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "vcs",
+      "url": "https://github.com/flancer64/habr-cvsn-mod-base"
+    },
+    {
+      "type": "vcs",
+      "url": "https://github.com/flancer64/habr-cvsn-mod-func"
+    }
+  ]
+}

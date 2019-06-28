@@ -1,0 +1,13 @@
+{
+  "name": "habr-cvsn-app",
+  "version": "0.1.0",
+  "description": "Demo for Habr: Application module.",
+  "license": "GPL-3.0",
+  "author": "Alex Gusev",
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/flancer64/habr-cvsn-app.git"
+  },
+  "dependencies": {}
+}

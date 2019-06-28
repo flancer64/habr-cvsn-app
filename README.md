@@ -1,2 +1,3 @@
 # habr-cvsn-app
-Demo for Habr: Application module 
+
+Demo for Habr: Application module.
