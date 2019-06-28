@@ -9,5 +9,8 @@
     "type": "git",
     "url": "git+https://github.com/flancer64/habr-cvsn-app.git"
   },
-  "dependencies": {}
+  "dependencies": {
+    "habr-cvsn-mod-base": "github:flancer64/habr-cvsn-mod-base",
+    "habr-cvsn-mod-func": "github:flancer64/habr-cvsn-mod-func"
+  }
 }
