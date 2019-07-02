@@ -1,10 +1,18 @@
 #!/usr/bin/env bash
+##
+#   Rebuild JS project (w/o VCS).
+##
+# current directory where from script was launched (to return to in the end)
+DIR_CUR="$PWD"
 # root directory (relative to the current shell script, not to the execution point)
-# http://pubs.opengroup.org/onlinepubs/9699919799/utilities/V3_chap02.html#tag_18_06_02
 DIR_ROOT=${DIR_ROOT:=`cd "$( dirname "$0" )/" && pwd`}
 
 echo "Remove installed dependencies and lock file."
 rm -fr ${DIR_ROOT}/node_modules ${DIR_ROOT}/package-lock.json
 
-echo "Re-install dependencies."
+echo "Re-install JS project."
+cd ${DIR_ROOT}
 npm install
+
+cd ${DIR_CUR}
+echo "Done."
